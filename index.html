@@ -1,10 +1,9 @@
 <!DOCTYPE html><title>+</title>
-<table><tr>
+<table>
 <script>
-r=0;c=0;m=['o','+','win','lose']
-while(++r<30){
+r=0;c=0;m=['o','+',' win',' lose']
+while(r<30){
   n=r>14||c>42?3:c<9?3:c==9?0:r<14?3:c<42?0:2
-  document.write('<td'+(n?' onMouseOver="alert(\'you '+m[n]+'\')">'+m[n-2]:'>')+(c>74?'<tr>':''))
-  ++c>75?c=0:--r
+  document.write((c?'':'<tr>')+'<td'+(n?' onMouseOver=alert("you"+m['+n+'])>'+m[n-2]:'>'));(c=++c%76)||++r
 }
 </script>
