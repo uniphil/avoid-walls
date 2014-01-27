@@ -1,10 +1,10 @@
 <!DOCTYPE html><title>+</title>
 <table><tr>
 <script>
-r=0;c=0;m=['win','lose','o','+']
+r=0;c=0;m=['o','+','win','lose']
 while(++r<30){
-  n=r>14||c>42?2:c<9?2:c==9?0:r<14?2:c<42?0:1
-  document.write('<td'+(n?' onMouseOver="alert(\'you '+m[n-1]+'\')">'+m[n+1]:'>')+(c>74?'<tr>':''))
+  n=r>14||c>42?3:c<9?3:c==9?0:r<14?3:c<42?0:2
+  document.write('<td'+(n?' onMouseOver="alert(\'you '+m[n]+'\')">'+m[n-2]:'>')+(c>74?'<tr>':''))
   ++c>75?c=0:--r
 }
 </script>
