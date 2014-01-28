@@ -1,6 +1,6 @@
 <!DOCTYPE html><title>+</title>
 <table>
 <script>
-for(r=c=-1,m=['o','+',' win',' lose'];r<30;document.write(((c=++c%75)?'':++r&&'<tr>')+'<td'+(n?' onMouseOver=alert("you"+m['+n+'])>'+m[n-2]:'>')))
-  n=r>14||c>42?3:c<9?3:c==9?0:r<14?3:c<42?0:2
+for(r=c=-1,m={o:' win',x:' lose'};r<30;document.write(((c=++c%75)?'':++r&&'<tr>')+'<td'+(n?' onMouseOver=alert("you"+m.'+n+')>'+n:'>')))
+  n=r>14||c>42?'x':c<9?'x':c==9?0:r<14?'x':c<42?0:'o'
 </script>
